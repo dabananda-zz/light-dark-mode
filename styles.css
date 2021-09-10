@@ -1,11 +1,17 @@
 :root {
     --primary-color: #fff;
     --secondary-color: #000;
+    --nav: rgb(90, 115, 184);
 }
 
 body {
     background: var(--primary-color);
     color: var(--secondary-color);
+}
+
+nav {
+    background: var(--nav);
+    color: var(--primary-color);
 }
 
 .dark-mode {
@@ -21,4 +27,41 @@ body {
 
 i:hover {
     cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+#table {
+    color: var(--secondary-color);
+    max-width: 768px;
+}
+
+#hero-text {
+    flex-direction: column;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#food-selection {
+    display: flex;
+}
+
+/* #price-order {
+    display: flex;
+    justify-content: end;
+} */
+
+@media (max-width: 768px) {
+    #food-selection, #price-order {
+        display: block;
+    }
+
+    #food-selection select {
+        margin-bottom: 1rem;
+        width: 100% !important;
+    }
 }
