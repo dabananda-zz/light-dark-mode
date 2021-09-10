@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.dark-mode {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    transition: all 0.5s ease-in;
+}
+
+#form {
+    max-width: 768px;
+    margin: auto;
+}
+
+i:hover {
+    cursor: pointer;
+}
