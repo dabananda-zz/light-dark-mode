@@ -28,8 +28,12 @@ function totalPriceCount(value) {
         case 4:
             totalPrice = 1.29 * value;
             break;
-        default:
+        case 5:
             totalPrice = 1.49 * value;
+            break;
+        default:
+            totalPrice = '00.00';
+            alert('Please select a food first')
             break;
     }
 

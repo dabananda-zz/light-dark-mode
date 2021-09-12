@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --nav: rgb(90, 115, 184);
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+nav {
+    background: var(--nav);
+    color: var(--primary-color);
+}
+
+.dark-mode {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    transition: all 0.5s ease-in;
+}
+
+#form {
+    max-width: 768px;
+    margin: auto;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+#table {
+    color: var(--secondary-color);
+    max-width: 768px;
+}
+
+.hero-text {
+    flex-direction: column;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#food-selection {
+    display: flex;
+}
+
+.theme-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #hero {
+    height: 90vh;
+} */
+
+.carousel-image {
+    height: 300px;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    #food-selection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #select {
+        width: 100% !important;
+        margin-bottom: 0.5rem;
+    }
+
+    #item-amount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #price-order {
+        display: flex;
+        flex-direction: column;
+        justify-content: start !important;
+    }
+
+    #price-order button {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #food-selection, #price-order {
+        display: block;
+    }
+
+    #food-selection select {
+        margin-bottom: 1rem;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-text {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .item-amount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-amount button {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    #price-order {
+        justify-content: center !important;
+    }
+
+    .align {
+        flex-direction:column-reverse;
+    }
+
+    #price-order button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+    #navigation {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navigation h2 {
+        font-size: 1.5rem;
+    }
+    
+    #theme-text {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    #navigation h2 {
+        font-size: 1rem;
+    }
+
+    #price-order {
+        flex-direction: column;
+    }
+}
